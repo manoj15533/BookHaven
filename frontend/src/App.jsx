@@ -94,8 +94,8 @@ const openBookDetails = async (book) => {
   if (book._id) {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/books/${book._id}`
-      );
+  `https://bookhaven-jdxh.onrender.com/api/books/${book._id}`
+);
 
       if (!response.ok) {
         throw new Error("Failed to fetch book details");
